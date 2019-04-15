@@ -6,3 +6,19 @@ license "CC0"
 
 targetName "min-d-a5"
 targetPath "./bin/"
+
+dependency "allegro" version=">=4.0.4"
+
+libs "allegro-5" platform="linux"
+libs "allegro-5" platform="dragonflybsd"
+libs "allegro-5" platform="freebsd"
+libs "allegro-5" platform="netbsd"
+libs "allegro-5" platform="openbsd"
+libs "allegro-5" platform="solaris"
+libs "allegro" platform="osx"
+libs "allegro" platform="windows"
+
+lflags-windows-dmd "-L/subsystem:windows"
+lflags-windows-ldc "-subsystem:windows" "-entry:mainCRTStartup"
+lflags-windows-ldc2 "-subsystem:windows" "-entry:mainCRTStartup"
+

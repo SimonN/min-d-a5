@@ -1,0 +1,8 @@
+name "min-d-a5"
+description "Minimal D/Allegro 5 applications"
+authors "Simon Naarmann"
+copyright "Released into the public domain via CC0 from Germany by Simon Naarmann"
+license "CC0"
+
+targetName "min-d-a5"
+targetPath "./bin/"

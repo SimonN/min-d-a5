@@ -18,7 +18,6 @@ libs "allegro-5" platform="solaris"
 libs "allegro" platform="osx"
 libs "allegro" platform="windows"
 
-lflags-windows-dmd "-L/subsystem:windows"
-lflags-windows-ldc "-subsystem:windows" "-entry:mainCRTStartup"
-lflags-windows-ldc2 "-subsystem:windows" "-entry:mainCRTStartup"
-
+lflags "-L/subsystem:windows" platform="windows-dmd"
+lflags "-subsystem:windows" "-entry:mainCRTStartup" platform="windows-ldc"
+lflags "-subsystem:windows" "-entry:mainCRTStartup" platform="windows-ldc2"
